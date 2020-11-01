@@ -37,7 +37,7 @@ public class Application {
 
         A aa = new A();
         String[] array = new String[]{"aaa", "ddd", "bbb", "ccc", "eee"};
-        //a.fromArrayToArrayList(a.getArray());
+        a.fromArrayToArrayList(a.getArray());
 
         B bb = new B();
         String[] array1 = new String[]{"aaa", "ddd", "bbb", "ccc", "eee"};
