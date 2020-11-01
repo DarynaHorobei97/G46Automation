@@ -24,7 +24,7 @@ public class Application {
 
         try {
            // a.textToLetters(list);
-            //b.textToLetters(Arrays.asList(a.getArray()));
+            b.textToLetters(Arrays.asList(a.getArray()));
             b.textToLetters(a.fromArrayToArrayList(a.getArray()));
 
             b.textToLetters(new ArrayList<String>());
