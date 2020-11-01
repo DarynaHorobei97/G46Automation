@@ -23,7 +23,7 @@ public class Application {
         list.add(null);
 
         try {
-           // a.textToLetters(list);
+            a.textToLetters(list);
             b.textToLetters(Arrays.asList(a.getArray()));
             b.textToLetters(a.fromArrayToArrayList(a.getArray()));
 
@@ -37,7 +37,7 @@ public class Application {
 
         A aa = new A();
         String[] array = new String[]{"aaa", "ddd", "bbb", "ccc", "eee"};
-       //a.fromArrayToArrayList(a.getArray());
+        //a.fromArrayToArrayList(a.getArray());
 
         B bb = new B();
         String[] array1 = new String[]{"aaa", "ddd", "bbb", "ccc", "eee"};
