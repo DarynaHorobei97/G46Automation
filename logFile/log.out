@@ -1,0 +1,34 @@
+19:21:08 01.11.2020 Class Parent: INFO - Some name: Text output
+19:21:08 01.11.2020 Class Parent: DEBUG- a
+19:21:08 01.11.2020 Class Parent: DEBUG- a
+19:21:08 01.11.2020 Class Parent: DEBUG- a
+19:21:08 01.11.2020 Class Parent: DEBUG- d
+19:21:08 01.11.2020 Class Parent: DEBUG- d
+19:21:08 01.11.2020 Class Parent: DEBUG- d
+19:21:08 01.11.2020 Class Parent: DEBUG- b
+19:21:08 01.11.2020 Class Parent: DEBUG- b
+19:21:08 01.11.2020 Class Parent: DEBUG- b
+19:21:08 01.11.2020 Class Parent: DEBUG- c
+19:21:08 01.11.2020 Class Parent: DEBUG- c
+19:21:08 01.11.2020 Class Parent: DEBUG- c
+19:21:08 01.11.2020 Class B: DEBUG- aaa
+19:21:08 01.11.2020 Class B: DEBUG- bbb
+19:21:08 01.11.2020 Class B: DEBUG- ccc
+19:21:08 01.11.2020 Class B: DEBUG- ddd
+19:56:20 01.11.2020 Class Parent: INFO - Some name: Text output
+19:56:20 01.11.2020 Class Parent: DEBUG- a
+19:56:20 01.11.2020 Class Parent: DEBUG- a
+19:56:20 01.11.2020 Class Parent: DEBUG- a
+19:56:20 01.11.2020 Class Parent: DEBUG- d
+19:56:20 01.11.2020 Class Parent: DEBUG- d
+19:56:20 01.11.2020 Class Parent: DEBUG- d
+19:56:20 01.11.2020 Class Parent: DEBUG- b
+19:56:20 01.11.2020 Class Parent: DEBUG- b
+19:56:20 01.11.2020 Class Parent: DEBUG- b
+19:56:20 01.11.2020 Class Parent: DEBUG- c
+19:56:20 01.11.2020 Class Parent: DEBUG- c
+19:56:20 01.11.2020 Class Parent: DEBUG- c
+19:56:20 01.11.2020 Class B: DEBUG- aaa
+19:56:20 01.11.2020 Class B: DEBUG- bbb
+19:56:20 01.11.2020 Class B: DEBUG- ccc
+19:56:20 01.11.2020 Class B: DEBUG- ddd
