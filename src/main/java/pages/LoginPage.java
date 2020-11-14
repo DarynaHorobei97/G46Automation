@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage extends BasePage {
+public class LoginPage{// extends BasePage {
 
     @FindBy(id = "login_field")
     private WebElement loginField;
@@ -18,8 +18,8 @@ public class LoginPage extends BasePage {
     private WebElement signInButton;
 
     public LoginPage(WebDriver driver) {
-        super(driver);
-        PageFactory.initElements(this.driver, this);
+        //super(driver);
+      //  PageFactory.initElements(this.driver, this);
     }
 
     public void checkAuthFields(){

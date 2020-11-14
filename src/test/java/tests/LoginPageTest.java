@@ -1,15 +1,14 @@
 package tests;
 
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.By;
 import pages.LoginPageObject;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
 import java.util.NoSuchElementException;
+
+import static helpers.ColorPrinter.printMessageInYellow;
 
 public class LoginPageTest extends BaseTest {
 
@@ -19,42 +18,42 @@ public class LoginPageTest extends BaseTest {
 
     @Before
     public void setPage() {
+        printMessageInYellow("===Test started===");
         this.page = new LoginPageObject(driver);
         this.errorMessage = "There have been several failed attempts to sign in from this account or IP address. " +
                 "Please wait a while and try again later.";
         this.invalidMessage = "Incorrect username or password.";
+
     }
 
     @Test
     public void negativeAuthTest() {
-        try {
+
             page.checkAuthFields()
-                    .login("admin", "admin")
+                    .loginNegative("admin", "admin")
                     .validateErrorMessage(errorMessage)
                     .returnToLoginPage()
-                    .login("login", "password")
+                    .loginNegative("login", "password")
                     .validateErrorMessage(invalidMessage, true);
-        } catch (NoSuchElementException e) {
-            Assert.fail(e.getMessage());
-        }
+
     }
 
     @Test
     public void loginTest() {
-        page.login("daryna_horobei1@ukr.net", "xxxx");
+        page.loginNegative("daryna_horobei1@ukr.net", "xxxx");
     }
 
 
     @Test
     public void goToG46AutomRep() {
-        page.login("daryna_horobei1@ukr.net", "xxxx");
+        page.loginNegative("daryna_horobei1@ukr.net", "xxxx");
         page.goToG46RepositoryThe1stVariant("https://github.com/DarynaHorobei97/G46Automation");
 
     }
 
     @Test
     public void goToSomeRepository(){
-        page.login("daryna_horobei1@ukr.net", "xxxx");
+        page.loginNegative("daryna_horobei1@ukr.net", "xxxx");
         page.checkIfRepositoryIsPresentAndOpenIt("G46Automation");
 
     }
@@ -68,7 +67,30 @@ public class LoginPageTest extends BaseTest {
 
     @Test
     public void checkOfSuccessfulSignOut(){
-        page.login("daryna_horobei1@ukr.net", "xxxx");
+        page.loginNegative("daryna_horobei1@ukr.net", "xxxx");
         page.signOutFromGitHub();
+    }
+
+    @Test
+    public void shownSystemVars(){
+        System.out.println(System.getProperty("login"));
+        System.out.println(System.getProperty("password"));
+    }
+
+
+    @Test
+    public void checkPositiveLogin(){
+        try {
+            page.checkAuthFields()
+                    .login(System.getProperty("login"), System.getProperty("password"))
+                    .validateLogin();
+        } catch (NoSuchElementException e) {
+            Assert.fail(e.getMessage());
+        }
+    }
+    @After
+    public void tearDown(){
+        printMessageInYellow("===Test finished===");
+        driver.quit();
     }
 }

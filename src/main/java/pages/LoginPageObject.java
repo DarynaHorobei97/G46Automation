@@ -1,5 +1,6 @@
 package pages;
 
+import helpers.Level;
 import old.A;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -14,15 +15,21 @@ import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 import static com.codeborne.selenide.Selenide.$;
+import static helpers.ColorPrinter.printColorMessage;
+import static helpers.ColorPrinter.printMessageInYellow;
 
 public class LoginPageObject extends BasePage {
 
+    private final static String TITLE = "Authorization page";
+    public LoginPageObject(WebDriver driver) {
+        super(driver, TITLE);
+    }
 
     private final By loginField = By.id("login_field");
     private final By passwordField = By.id("password");
     private final By signInButton = By.name("commit");
     private final By errorMessage = By.xpath("//div[@id='login']/p");
-    private final By message = By.xpath("//div[@class='container-lg px-2']");
+    private final By message = By.xpath("//div[contains(@class,'container-lg px-')]");
 
     private final By listOfRepositories = By.xpath("//a[@data-hovercard-type='repository']");
     private final By pomXml = By.xpath("//a[@title='pom.xml']");
@@ -68,7 +75,6 @@ public class LoginPageObject extends BasePage {
     }
 
 
-
     public LoginPageObject signOutFromGitHub() {
         driver.findElement(avatar).click();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -83,17 +89,25 @@ public class LoginPageObject extends BasePage {
 //    private SelenideElement signInBut = $(byName("commit"));
 
 
-    public LoginPageObject(WebDriver driver) {
-        super(driver);
-    }
 
-    public LoginPageObject login(String login, String password) {
+    public LoginPageObject loginNegative(String login, String password) {
         driver.findElement(loginField).sendKeys(login);
         driver.findElement(passwordField).sendKeys(password);
         driver.findElement(signInButton).click();
         return new LoginPageObject(driver);
     }
 
+
+    public MainPage login(String login, String password) {
+        printColorMessage("Authorization is in progress", log, Level.INFO);
+        //log.info("Authorization is in progress");
+        driver.findElement(loginField).sendKeys(login);
+        driver.findElement(passwordField).sendKeys(password);
+        driver.findElement(signInButton).click();
+        printColorMessage("Success authorization", log, Level.INFO);
+        //log.info("Success authorization");
+        return new MainPage(driver);
+    }
 
     public LoginPageObject returnToLoginPage() {
         driver.navigate().back();
@@ -112,11 +126,13 @@ public class LoginPageObject extends BasePage {
 
     public LoginPageObject checkAuthFields() {
         // login.shouldBe(Condition.visible).sendKeys("login");
-
+        printColorMessage("Authorization fields validation", log, Level.INFO);
+        //log.info("Authorization fields validation");
         Assert.assertTrue("Login field is invisible", this.driver.findElement(loginField).isDisplayed());
         Assert.assertTrue("Password field is invisible", this.driver.findElement(passwordField).isDisplayed());
         Assert.assertTrue("Sign In button is invisible", this.driver.findElement(signInButton).isDisplayed());
-
+        printColorMessage("Authorization fields are valid", log, Level.INFO);
+        //log.info("Authorization fields are valid");
         return this;
     }
 
