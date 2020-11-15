@@ -16,7 +16,7 @@ public abstract class AbstractMainProjectPage {
 
     protected WebDriver driver;
     protected Logger log;
-    private String title;
+    protected String title;
 
     protected final By loginField = By.id("login_field");
     protected final By passwordField = By.id("password");
@@ -35,6 +35,15 @@ public abstract class AbstractMainProjectPage {
     public void colorfulTabsNames() {
         List<WebElement> tabsList = driver.findElements(tabs);
         printTabsNamesWithDifferentColors(tabsList);
+
+    }
+
+    public void colorfulTabNames1(){
+        List<WebElement> tabsList = driver.findElements(tabs);
+        for (int i = 0; i <tabsList.size() ; i++) {
+            printColorMessage(tabsList.get(i).getText(),log, Level.INFO);
+        }
+
 
     }
 

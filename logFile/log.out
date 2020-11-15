@@ -10,3 +10,17 @@
 21:37:41 15.11.2020 Main page: INFO - [0;34mPage object is created: Main page,class: pages.MainPage[0m
 21:37:42 15.11.2020 Profile form: INFO - [0;34mPage object is created: Profile form,class: pages.ProfileForm[0m
 21:37:44 15.11.2020 Authorization page: INFO - [0;34mPage object is created: Authorization page,class: pages.LoginPageObject[0m
+21:55:54 15.11.2020 Authorization page: INFO - [0;34mPage object is created: Authorization page,class: pages.LoginPageObject[0m
+21:55:54 15.11.2020 Authorization page: INFO - [0;32mAuthorization is in progress[0m
+21:55:56 15.11.2020 Authorization page: INFO - [0;32mSuccess authorization[0m
+21:55:56 15.11.2020 Main page: INFO - [0;34mPage object is created: Main page,class: pages.MainPage[0m
+21:55:56 15.11.2020 Project page: INFO - [0;34mPage object is created: Project page,class: pages.ProjectPage[0m
+21:55:56 15.11.2020 Project page: INFO - [0;32mCode[0m
+21:55:56 15.11.2020 Project page: INFO - [0;32mIssues[0m
+21:55:57 15.11.2020 Project page: INFO - [0;32mPull requests[0m
+21:55:57 15.11.2020 Project page: INFO - [0;32mActions[0m
+21:55:57 15.11.2020 Project page: INFO - [0;32mProjects[0m
+21:55:57 15.11.2020 Project page: INFO - [0;32mWiki[0m
+21:55:57 15.11.2020 Project page: INFO - [0;32mSecurity[0m
+21:55:57 15.11.2020 Project page: INFO - [0;32mInsights[0m
+21:55:57 15.11.2020 Project page: INFO - [0;32mSettings[0m

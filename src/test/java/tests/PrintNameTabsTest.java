@@ -23,4 +23,10 @@ public class PrintNameTabsTest extends BaseTest {
     public void printTabsInDiffColors() {
         page.colorfulTabsNames();
     }
+
+    @Test
+    public void printTabsInDiffColors1() {
+        page.colorfulTabNames1();
+
+    }
 }
