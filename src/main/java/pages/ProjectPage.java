@@ -8,6 +8,7 @@ import pages.issues.IssuesPage;
 
 public class ProjectPage extends BasePage {
     private final static String TITLE = "Project page";
+    private final By avatar = By.xpath("//img[@class='avatar avatar-user']");
     private By issueTab = By.xpath("//span[@data-content='Issues']");
 
     public ProjectPage(WebDriver driver) {
@@ -23,4 +24,12 @@ public class ProjectPage extends BasePage {
 
         return new IssuesPage(driver);
     }
+
+    public ProfileForm openProfileForm(){
+        driver.findElement(avatar).click();
+        return new ProfileForm(driver);
+    }
+
+
+
 }

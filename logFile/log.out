@@ -174,3 +174,45 @@
 01:00:19 15.11.2020 The page containing infortmation about issue: INFO - [0;34mPage object is created: The page containing infortmation about issue,class: pages.issues.IssueInfoPage[0m
 01:00:19 15.11.2020 The page containing infortmation about issue: INFO - [0;32mNew issue creation checking[0m
 01:00:19 15.11.2020 The page containing infortmation about issue: INFO - [0;32mData validation passed. The issue was created successfully[0m
+17:15:08 15.11.2020 Authorization page: INFO - [0;34mPage object is created: Authorization page,class: pages.LoginPageObject[0m
+17:15:08 15.11.2020 BasePage: INFO - [0;34mPage object is created: Authorization page,class: pages.LoginPageObject[0m
+17:15:08 15.11.2020 BasePage: INFO - [0;32mAuthorization fields validation[0m
+17:16:50 15.11.2020 Authorization page: INFO - [0;34mPage object is created: Authorization page,class: pages.LoginPageObject[0m
+17:16:50 15.11.2020 BasePage: INFO - [0;34mPage object is created: Authorization page,class: pages.LoginPageObject[0m
+17:16:50 15.11.2020 BasePage: INFO - [0;32mAuthorization is in progress[0m
+17:18:16 15.11.2020 Authorization page: INFO - [0;34mPage object is created: Authorization page,class: pages.LoginPageObject[0m
+17:18:16 15.11.2020 Authorization page: INFO - [0;32mAuthorization fields validation[0m
+17:18:17 15.11.2020 Authorization page: INFO - [0;32mAuthorization fields are valid[0m
+17:18:17 15.11.2020 Authorization page: INFO - [0;34mPage object is created: Authorization page,class: pages.LoginPageObject[0m
+17:18:17 15.11.2020 Authorization page: INFO - [0;34mPage object is created: Authorization page,class: pages.LoginPageObject[0m
+17:18:18 15.11.2020 Authorization page: INFO - [0;34mPage object is created: Authorization page,class: pages.LoginPageObject[0m
+18:19:13 15.11.2020 Authorization page: INFO - [0;34mPage object is created: Authorization page,class: pages.LoginPageObject[0m
+18:19:13 15.11.2020 Authorization page: INFO - [0;32mAuthorization is in progress[0m
+18:19:14 15.11.2020 Authorization page: INFO - [0;32mSuccess authorization[0m
+18:19:14 15.11.2020 Main page: INFO - [0;34mPage object is created: Main page,class: pages.MainPage[0m
+18:19:15 15.11.2020 Project page: INFO - [0;34mPage object is created: Project page,class: pages.ProjectPage[0m
+18:21:56 15.11.2020 Authorization page: INFO - [0;34mPage object is created: Authorization page,class: pages.LoginPageObject[0m
+18:21:56 15.11.2020 Authorization page: INFO - [0;32mAuthorization is in progress[0m
+18:21:57 15.11.2020 Authorization page: INFO - [0;32mSuccess authorization[0m
+18:21:57 15.11.2020 Main page: INFO - [0;34mPage object is created: Main page,class: pages.MainPage[0m
+18:21:58 15.11.2020 Project page: INFO - [0;34mPage object is created: Project page,class: pages.ProjectPage[0m
+18:26:03 15.11.2020 Authorization page: INFO - [0;34mPage object is created: Authorization page,class: pages.LoginPageObject[0m
+18:26:03 15.11.2020 Authorization page: INFO - [0;32mAuthorization is in progress[0m
+18:26:04 15.11.2020 Authorization page: INFO - [0;32mSuccess authorization[0m
+18:26:04 15.11.2020 Main page: INFO - [0;34mPage object is created: Main page,class: pages.MainPage[0m
+18:26:05 15.11.2020 Project page: INFO - [0;34mPage object is created: Project page,class: pages.ProjectPage[0m
+18:28:58 15.11.2020 Authorization page: INFO - [0;34mPage object is created: Authorization page,class: pages.LoginPageObject[0m
+18:28:58 15.11.2020 Authorization page: INFO - [0;32mAuthorization is in progress[0m
+18:28:59 15.11.2020 Authorization page: INFO - [0;32mSuccess authorization[0m
+18:28:59 15.11.2020 Main page: INFO - [0;34mPage object is created: Main page,class: pages.MainPage[0m
+18:29:01 15.11.2020 Project page: INFO - [0;34mPage object is created: Project page,class: pages.ProjectPage[0m
+18:29:57 15.11.2020 Authorization page: INFO - [0;34mPage object is created: Authorization page,class: pages.LoginPageObject[0m
+18:29:57 15.11.2020 Authorization page: INFO - [0;32mAuthorization is in progress[0m
+18:29:58 15.11.2020 Authorization page: INFO - [0;32mSuccess authorization[0m
+18:29:58 15.11.2020 Main page: INFO - [0;34mPage object is created: Main page,class: pages.MainPage[0m
+18:29:59 15.11.2020 Project page: INFO - [0;34mPage object is created: Project page,class: pages.ProjectPage[0m
+18:30:59 15.11.2020 Authorization page: INFO - [0;34mPage object is created: Authorization page,class: pages.LoginPageObject[0m
+18:30:59 15.11.2020 Authorization page: INFO - [0;32mAuthorization is in progress[0m
+18:31:00 15.11.2020 Authorization page: INFO - [0;32mSuccess authorization[0m
+18:31:00 15.11.2020 Main page: INFO - [0;34mPage object is created: Main page,class: pages.MainPage[0m
+18:31:01 15.11.2020 Project page: INFO - [0;34mPage object is created: Project page,class: pages.ProjectPage[0m
