@@ -1,7 +1,11 @@
 package helpers;
 
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebElement;
 import sun.rmi.runtime.Log;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static helpers.ConsoleColors.*;
 
@@ -25,6 +29,24 @@ public class ColorPrinter {
             case ERROR:
                 logger.info(RED + message + RESET);
                 break;
+        }
+    }
+
+    public static void printTabsNamesWithDifferentColors(List<WebElement> tabList) {
+        List<String> colorList = new ArrayList<>();
+        colorList.add(RED);
+        colorList.add(GREEN);
+        colorList.add(YELLOW);
+        colorList.add(BLUE);
+        colorList.add(PURPLE);
+        colorList.add(CYAN);
+        colorList.add(RED);
+        colorList.add(GREEN);
+        colorList.add(YELLOW);
+
+        for (int i = 0; i < colorList.size(); i++) {
+            System.out.println(colorList.get(i) + tabList.get(i).getText());
+
         }
     }
 }

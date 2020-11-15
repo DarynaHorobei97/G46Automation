@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 import static helpers.ColorPrinter.printMessageInYellow;
 
-public class MainPage extends BasePage {
+public class MainPage extends AbstractMainProjectPage {
 
     private final static String TITLE = "Main page";
 
@@ -29,5 +29,10 @@ public class MainPage extends BasePage {
     public ProjectPage openOurProjectpage() {
         driver.get("https://github.com/DarynaHorobei97/G46Automation");
         return new ProjectPage(driver);
+    }
+
+    public ProfileForm goToProfileForm(){
+        driver.get("https://github.com/DarynaHorobei97/G46Automation");
+        return new ProfileForm(driver);
     }
 }

@@ -114,6 +114,7 @@ public class LoginPageObject extends BasePage {
         return new LoginPageObject(driver);
     }
 
+
     public LoginPageObject validateErrorMessage(String message) {
         Assert.assertEquals(message, driver.findElement(errorMessage).getText());
         return this;

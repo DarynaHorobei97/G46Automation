@@ -6,19 +6,29 @@ import org.openqa.selenium.WebDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class ProfileForm extends BasePage {
+public class ProfileForm extends AbstractMainProjectPage {
 
     private final static String TITLE = "Profile form";
     private final By viewProfileAndMoreButton = By.xpath("//details/summary[@aria-label='View profile and more']/span[@class='dropdown-caret']");
     private final By signOutButton = By.xpath("//button[contains(text(),'Sign out')]");
     private final By successIndicatorOfSigningOut = By.xpath("//h1[contains(text(),'Built')]");
 
+
     public ProfileForm(WebDriver driver) {
         super(driver, TITLE);
     }
 
 
-    public LoginPageObject signOutFromGitHub() {
+    public ProfileForm goToProfileForm(String login, String password){
+        driver.findElement(loginField).sendKeys(login);
+        driver.findElement(passwordField).sendKeys(password);
+        driver.findElement(signInButton).click();
+        driver.get("https://github.com/DarynaHorobei97/G46Automation");
+        driver.findElement(viewProfileAndMoreButton).click();
+        return new ProfileForm(driver);
+    }
+
+        public LoginPageObject signOutFromGitHub() {
         driver.findElement(viewProfileAndMoreButton).click();
         Assert.assertTrue(driver.findElement(viewProfileAndMoreButton).isDisplayed());
         Assert.assertTrue(driver.findElement(signOutButton).isDisplayed());

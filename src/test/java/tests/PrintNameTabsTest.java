@@ -2,30 +2,25 @@ package tests;
 
 import org.junit.Before;
 import org.junit.Test;
+import pages.AbstractMainProjectPage;
 import pages.LoginPageObject;
-import pages.ProfileForm;
+import pages.MainPage;
 import pages.ProjectPage;
 
-public class SignOutTest extends BaseTest {
-    private ProfileForm page;
+public class PrintNameTabsTest extends BaseTest {
 
+    private ProjectPage page;
 
     @Before
     public void signIn() {
         page = new LoginPageObject(driver)
                 .login(System.getProperty("login"), System.getProperty("password"))
-                .goToProfileForm();
+                .openOurProjectpage();
 
     }
 
     @Test
-    public void isSignOutSuccessful(){
-        page.signOutFromGitHub();
+    public void printTabsInDiffColors() {
+        page.colorfulTabsNames();
     }
-
-    @Test
-    public void isSignOut(){
-        page.signOutFromGitHub(true);
-    }
-
 }

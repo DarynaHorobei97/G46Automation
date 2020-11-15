@@ -15,6 +15,7 @@ import java.util.concurrent.TimeUnit;
 public class SomeTest extends BaseTest {
     private LoginPage page;
 
+
     @Before
     public void setPage() {
         page = new LoginPage(driver);
@@ -24,6 +25,8 @@ public class SomeTest extends BaseTest {
     public void ourTest() {
         page.checkAuthFields();
     }
+
+
 
 
 }

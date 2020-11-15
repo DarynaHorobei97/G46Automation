@@ -6,7 +6,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import pages.issues.IssuesPage;
 
-public class ProjectPage extends BasePage {
+public class ProjectPage extends AbstractMainProjectPage {
     private final static String TITLE = "Project page";
     private final By avatar = By.xpath("//img[@class='avatar avatar-user']");
     private By issueTab = By.xpath("//span[@data-content='Issues']");
@@ -25,11 +25,8 @@ public class ProjectPage extends BasePage {
         return new IssuesPage(driver);
     }
 
-    public ProfileForm openProfileForm(){
-        driver.findElement(avatar).click();
-        return new ProfileForm(driver);
-    }
-
-
-
 }
+
+
+
+
