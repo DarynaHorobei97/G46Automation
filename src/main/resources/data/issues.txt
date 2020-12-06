@@ -1,1 +1,7 @@
-File test title, test file body, bug, good first issue
+Title0, Comment0, bug
+Title1, Comment1, documentation
+Title2, Comment2, question
+Title3, Comment3, bug, documentation
+Title4, Comment4, bug, question
+Title5, Comment5, documentation, question
+Title6, Comment6, bug, documentation, question

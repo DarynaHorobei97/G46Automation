@@ -19,4 +19,8 @@ public class HomePage extends BasePage {
         Assert.assertEquals("Built for developers", driver.findElement(titleMessage).getText());
 
     }
+
+
+
+
 }

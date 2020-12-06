@@ -10,14 +10,15 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class ExcelHelper {
 
     private final static Logger LOG = LogManager.getLogger("Обработчик Excel файлов");
 
-    public static List<String> readColumnFromExcelFile(String path, int columnIndex){
-        List<String> result = new ArrayList<>();
+    public static Collection<Object> readColumnFromExcelFile(String path, int columnIndex){
+        Collection<Object> result = new ArrayList<>();
         try {
             Workbook file = new XSSFWorkbook(path);
             Sheet sheet = file.getSheet("Sheet1");

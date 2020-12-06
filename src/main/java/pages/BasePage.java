@@ -28,4 +28,6 @@ public abstract class BasePage {
         webDriverWait_20 = new WebDriverWait(driver, 20);
     }
 
+    public BasePage(WebDriver driver) {
+    }
 }
