@@ -28,22 +28,22 @@ public class ProfileForm extends AbstractMainProjectPage {
         return new ProfileForm(driver);
     }
 
-        public LoginPageObject signOutFromGitHub() {
+        public LoginPage signOutFromGitHub() {
         driver.findElement(viewProfileAndMoreButton).click();
         Assert.assertTrue(driver.findElement(viewProfileAndMoreButton).isDisplayed());
         Assert.assertTrue(driver.findElement(signOutButton).isDisplayed());
         driver.findElement(signOutButton).click();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         Assert.assertEquals("Built for developers", driver.findElement(successIndicatorOfSigningOut).getText());
-        return new LoginPageObject(driver);
+        return new LoginPage(driver);
     }
 
-    public LoginPageObject signOutFromGitHub(boolean isSignOutWithoutCheck) {
+    public LoginPage signOutFromGitHub(boolean isSignOutWithoutCheck) {
         driver.findElement(viewProfileAndMoreButton).click();
         Assert.assertTrue(driver.findElement(viewProfileAndMoreButton).isDisplayed());
         Assert.assertTrue(driver.findElement(signOutButton).isDisplayed());
         driver.findElement(signOutButton).click();
-        return new LoginPageObject(driver);
+        return new LoginPage(driver);
     }
 
 

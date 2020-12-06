@@ -1,32 +1,22 @@
 package tests;
 
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
+
 import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import pages.LoginPage;
-import pages.LoginPageObject;
 
-import java.util.concurrent.TimeUnit;
+import java.util.List;
 
-public class SomeTest extends BaseTest {
-    private LoginPage page;
+import static helpers.ExcelHelper.readColumnFromExcelFile;
+import static helpers.ExcelHelper.readExcelFile;
+import static helpers.FileHelper.readLinesFromFile;
+import static helpers.FileHelper.writeTextToFile;
 
-
-    @Before
-    public void setPage() {
-        page = new LoginPage(driver);
-    }
+public class SomeTest {
 
     @Test
-    public void ourTest() {
-        page.checkAuthFields();
+    public void checkFile(){
+        readExcelFile(
+                System.getProperty("user.dir") + "/src/test/resources/data/TestExcelFile3.xltx",
+                "Sheet1").forEach(System.out::println);
     }
-
-
-
 
 }

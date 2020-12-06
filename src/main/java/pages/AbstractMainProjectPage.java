@@ -12,7 +12,7 @@ import java.util.List;
 import static helpers.ColorPrinter.printColorMessage;
 import static helpers.ColorPrinter.printTabsNamesWithDifferentColors;
 
-public abstract class AbstractMainProjectPage {
+public  class AbstractMainProjectPage {
 
     protected WebDriver driver;
     protected Logger log;

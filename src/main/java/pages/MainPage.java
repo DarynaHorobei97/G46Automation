@@ -3,6 +3,7 @@ package pages;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import pages.code.ProjectPage;
 
 import static helpers.ColorPrinter.printMessageInYellow;
 

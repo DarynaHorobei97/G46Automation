@@ -2,21 +2,20 @@ package tests;
 
 import org.junit.Before;
 import org.junit.Test;
-import pages.LoginPageObject;
+import pages.LoginPage;
 import pages.ProfileForm;
-import pages.ProjectPage;
 
 public class SignOutTest extends BaseTest {
     private ProfileForm page;
 
 
-    @Before
-    public void signIn() {
-        page = new LoginPageObject(driver)
-                .login(System.getProperty("login"), System.getProperty("password"))
-                .goToProfileForm();
-
-    }
+//    @Before
+//    public void signIn() {
+//        page = new LoginPage(driver)
+//                .login(System.getProperty("login"), System.getProperty("password"))
+//                .goToProfileForm();
+//
+//    }
 
     @Test
     public void isSignOutSuccessful(){
