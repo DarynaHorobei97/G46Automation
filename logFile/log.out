@@ -177,3 +177,5 @@
 18:22:19 06.12.2020 Страница авторизации: INFO - [0;32mПроводится авторизация в приложение[0m
 18:22:21 06.12.2020 Страница авторизации: INFO - [0;32mАвторизация успешна![0m
 18:22:21 06.12.2020 Project page: INFO - [0;34mPage object is created: Project page,class: pages.code.ProjectPage[0m
+19:25:13 12.12.2020 Помошник работы с файлами: ERROR- Проблема с файлом /home/bohdan/projectQALight/G46Automation/src/test/resources/data/authData.txt: \home\bohdan\projectQALight\G46Automation\src\test\resources\data\authData.txt
+21:22:47 12.12.2020 Помошник работы с файлами: ERROR- Проблема с файлом /home/bohdan/projectQALight/G46Automation/src/test/resources/data/authData.txt: \home\bohdan\projectQALight\G46Automation\src\test\resources\data\authData.txt
