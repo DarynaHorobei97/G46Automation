@@ -3,7 +3,7 @@ package tests.api.privat24;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import tests.api.BaseApiTest;
+
 
 import java.util.*;
 
@@ -58,7 +58,6 @@ public class PrivatCurrencyTest extends BaseApiTest {
                 .queryParam("exchange")
                 .queryParam("coursid", this.id)
                 .contentType(XML)
-                .baseUri("https://api.privatbank.ua/p24api")
                 .when()
                 .post("/pubinfo")
                 .then()
