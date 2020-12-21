@@ -1,11 +1,11 @@
 package pages.projects;
 
+import io.qameta.allure.Step;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import pages.BaseAuthorizedPage;
-import pages.BasePage;
 import pages.issues.IssuesPage;
 import pages.settings.SettingsPage;
 
@@ -20,7 +20,7 @@ public class ProjectsPage extends BaseAuthorizedPage {
     public ProjectsPage(WebDriver driver) {
         super(driver, TITLE);
     }
-
+    @Step("Open project issue")
     public IssuesPage openProjectIssues(){
         try {
             driver.findElement(issuesTab).click();

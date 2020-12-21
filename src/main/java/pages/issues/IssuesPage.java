@@ -14,6 +14,7 @@ public class IssuesPage extends BasePage {
         super(driver, TITLE);
     }
 
+
     public IssueCreationPage pressToCreateNewIssue() {
         log.info("Click on \"New issue creation\"");
         Assert.assertTrue(driver.findElement(newIssueButton).isDisplayed());

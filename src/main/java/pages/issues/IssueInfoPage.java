@@ -1,6 +1,7 @@
 package pages.issues;
 
 import helpers.Level;
+import io.qameta.allure.Step;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -23,7 +24,7 @@ public class IssueInfoPage extends BasePage {
         super(driver, TITLE);
     }
 
-
+    @Step("Validate created issue")
     public IssueInfoPage validateCreatedIssue(String titleText, String body, List<String> testLabels) {
         printColorMessage("New issue creation checking", log, Level.INFO);
         try {

@@ -12,7 +12,7 @@ import static io.restassured.http.ContentType.XML;
 import static org.hamcrest.CoreMatchers.*;
 
 @RunWith(Parameterized.class)
-public class PrivatCurrencyTest extends BaseApiTest {
+public class PrivatCurrencyTest extends tests.api.privat24.BaseApiTest {
 
     private String type;
     private String id;

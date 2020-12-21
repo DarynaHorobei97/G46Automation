@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -18,7 +19,7 @@ public class ProfileForm extends AbstractMainProjectPage {
         super(driver, TITLE);
     }
 
-
+    @Step("Go to profile")
     public ProfileForm goToProfileForm(String login, String password){
         driver.findElement(loginField).sendKeys(login);
         driver.findElement(passwordField).sendKeys(password);
@@ -27,7 +28,7 @@ public class ProfileForm extends AbstractMainProjectPage {
         driver.findElement(viewProfileAndMoreButton).click();
         return new ProfileForm(driver);
     }
-
+    @Step("Sign out from GitHub")
         public LoginPage signOutFromGitHub() {
         driver.findElement(viewProfileAndMoreButton).click();
         Assert.assertTrue(driver.findElement(viewProfileAndMoreButton).isDisplayed());
@@ -37,7 +38,7 @@ public class ProfileForm extends AbstractMainProjectPage {
         Assert.assertEquals("Built for developers", driver.findElement(successIndicatorOfSigningOut).getText());
         return new LoginPage(driver);
     }
-
+    @Step("Sign out from GitHub")
     public LoginPage signOutFromGitHub(boolean isSignOutWithoutCheck) {
         driver.findElement(viewProfileAndMoreButton).click();
         Assert.assertTrue(driver.findElement(viewProfileAndMoreButton).isDisplayed());

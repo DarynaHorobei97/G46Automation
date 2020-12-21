@@ -1,20 +1,14 @@
 package tests.api.privat24;
 
-import io.restassured.filter.log.LogDetail;
-import org.hamcrest.CoreMatchers;
 import org.junit.Test;
 
 import java.util.List;
 
 import static io.restassured.RestAssured.given;
-import static io.restassured.http.ContentType.XML;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.hasItems;
-import static org.junit.matchers.JUnitMatchers.hasItem;
 
-import org.apache.logging.log4j.Logger;
-
-public class HomeWorkApiTest extends BaseApiTest {
+public class HomeWorkApiTest extends tests.api.privat24.BaseApiTest {
 
 
     @Test
